@@ -249,14 +249,16 @@
         padding: 0 8px;
     }
 
+   @media (max-width: 480px) {
     .card-box {
-        width: 155px;
-        min-height: 250px;
+        width: calc(50% - 8px); 
+        min-height: 260px; 
     }
 
     .box-img img {
-        height: 170px;
+        height: 180px; 
     }
+}
 
     .card-box span {
         font-size: 10px;
