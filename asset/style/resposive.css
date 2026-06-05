@@ -1,9 +1,7 @@
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
-       
         padding: 0 10px;
-       
     }
 
     .container {
@@ -29,7 +27,6 @@
         display: none;
     }
 
-
     .hero {
         height: 100svh;
         min-height: 600px;
@@ -38,7 +35,6 @@
     .hero>img {
         object-position: 20% center;
     }
-
 
     .hero-card {
         position: absolute;
@@ -82,14 +78,13 @@
     .img-part img {
         width: 100%;
         height: 300px;
-
+        object-fit: cover;
     }
 
     .img-part {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
     }
 
     .img-part span {
@@ -98,39 +93,33 @@
         font-size: 18px;
         text-align: center;
         color: #333;
-        margin-top: 15px
+        margin-top: 15px;
     }
 
-    /* ======producr-section======== */
+    /* ======product-section======== */
     .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px; 
-    padding: 0 10px; 
-}
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 0 10px;
+    }
 
-.card-box {
-    display: flex;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    text-align: left;
-    flex-direction: column;
-    width: calc(50% - 10px); 
-    height: 250px;
-    overflow: hidden;
-}
+    .card-box {
+        display: flex;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: left;
+        flex-direction: column;
+        width: calc(50% - 10px);
+        height: auto;
+        min-height: 220px;
+        overflow: hidden;
+    }
 
-.box-img img {
-    width: 100%;
-    height: 150px; 
-    object-fit: cover;
-}
-
-    .card-box p,
-    span,
-    .one,
-    .two {
-        padding: 0px 10px;
+    .box-img img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
     }
 
     .card-box span {
@@ -139,6 +128,7 @@
         font-size: 12px;
         line-height: 120%;
         color: #3a3a3a;
+        padding: 0 8px;
     }
 
     .card-box p {
@@ -146,23 +136,24 @@
         font-size: 8px;
         line-height: 150%;
         color: #898989;
+        padding: 0 8px;
     }
 
     .one {
-        font-family: var(--font-family);
         font-weight: 600;
         font-size: 10px;
         line-height: 150%;
         color: #3a3a3a;
+        padding: 0 8px;
     }
 
     .two {
-        font-family: var(--font-family);
         font-weight: 400;
         font-size: 8px;
         line-height: 150%;
         text-decoration: line-through;
         color: #b0b0b0;
+        padding: 0 8px;
     }
 
     /* ========know-more========= */
@@ -172,7 +163,8 @@
         justify-content: center;
         align-items: center;
         width: 100%;
-        min-height: 1000px;
+        min-height: auto;
+        padding: 30px 0;
     }
 
     .details {
@@ -198,11 +190,10 @@
         background: #b88e2f;
         width: 176px;
         height: 48px;
-        justify-content: center;
-        margin: 20px auto;
-        align-items: center;
         display: flex;
-
+        justify-content: center;
+        align-items: center;
+        margin: 20px auto;
     }
 
     .details a {
@@ -218,12 +209,12 @@
         gap: 10px;
         align-items: center;
         justify-content: center;
-
     }
 
     .know-more-image img {
-        width: 320px;
-        height: 340px;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
     }
 
     .share-part {
@@ -231,8 +222,6 @@
     }
 
     /* ========footer part=========== */
-    .footer {}
-
     .footer-data {
         flex-direction: column;
         gap: 30px;
@@ -249,5 +238,57 @@
 
     .footer-bottom {
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* ======product====== */
+    .cards {
+        gap: 8px;
+        padding: 0 8px;
+    }
+
+    .card-box {
+        width: calc(50% - 8px);
+        min-height: 200px;
+    }
+
+    .box-img img {
+        height: 120px;
+    }
+
+    .card-box span {
+        font-size: 10px;
+        padding: 0 4px;
+    }
+
+    .card-box p {
+        font-size: 8px;
+        padding: 0 4px;
+    }
+
+    .one {
+        font-size: 9px;
+        padding: 0 4px;
+    }
+
+    .two {
+        font-size: 7px;
+        padding: 0 4px;
+    }
+
+    /* ======know-more====== */
+    .know-more-brife {
+        padding: 20px 0;
+    }
+
+    .know-more-image img {
+        height: 180px;
+    }
+
+    /* ======footer====== */
+    .right-three input {
+        width: 100%;
     }
 }
