@@ -1,0 +1,251 @@
+@media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+       
+        padding: 0 10px;
+       
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    .cont-item {
+        height: 70px;
+        padding: 0 16px;
+        justify-content: center;
+    }
+
+    .nav-logo img {
+        width: 140px;
+        height: 32px;
+    }
+
+    .cont-list {
+        display: none;
+    }
+
+    .nav-icons {
+        display: none;
+    }
+
+
+    .hero {
+        height: 100svh;
+        min-height: 600px;
+    }
+
+    .hero>img {
+        object-position: 20% center;
+    }
+
+
+    .hero-card {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 88%;
+        padding: 36px 28px;
+        background: #fff3e3;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        right: auto;
+        bottom: auto;
+    }
+
+    .hero-card h4 {
+        font-size: 36px;
+        line-height: 120%;
+    }
+
+    .hero-card p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    .hero-card a {
+        padding: 18px 0;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        letter-spacing: 0.15em;
+    }
+
+    /* =====about part===== */
+    .about-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-part img {
+        width: 100%;
+        height: 300px;
+
+    }
+
+    .img-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .img-part span {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 18px;
+        text-align: center;
+        color: #333;
+        margin-top: 15px
+    }
+
+    /* ======producr-section======== */
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card-box {
+        display: flex;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        text-align: left;
+        flex-direction: column;
+        width: 165px;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .box-img img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+
+    .card-box p,
+    span,
+    .one,
+    .two {
+        padding: 0px 10px;
+    }
+
+    .card-box span {
+        display: inline-block;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 120%;
+        color: #3a3a3a;
+    }
+
+    .card-box p {
+        font-weight: 500;
+        font-size: 8px;
+        line-height: 150%;
+        color: #898989;
+    }
+
+    .one {
+        font-family: var(--font-family);
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 150%;
+        color: #3a3a3a;
+    }
+
+    .two {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 8px;
+        line-height: 150%;
+        text-decoration: line-through;
+        color: #b0b0b0;
+    }
+
+    /* ========know-more========= */
+    .know-more-brife {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 1000px;
+    }
+
+    .details {
+        width: 100%;
+        text-align: center;
+    }
+
+    .details h4 {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 120%;
+        color: #3a3a3a;
+    }
+
+    .details p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 150%;
+        color: #616161;
+    }
+
+    .Explore {
+        background: #b88e2f;
+        width: 176px;
+        height: 48px;
+        justify-content: center;
+        margin: 20px auto;
+        align-items: center;
+        display: flex;
+
+    }
+
+    .details a {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 45px;
+        color: #fff;
+    }
+
+    .know-more-image {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .know-more-image img {
+        width: 320px;
+        height: 340px;
+    }
+
+    .share-part {
+        display: none;
+    }
+
+    /* ========footer part=========== */
+    .footer {}
+
+    .footer-data {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .left-part {
+        width: 100%;
+    }
+
+    .right-part {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-bottom {
+        text-align: center;
+    }
+}
