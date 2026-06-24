@@ -1,6 +1,10 @@
+/* ===== global mobile fix ===== */
+html {
+    overflow-x: hidden;
+}
+
 @media (max-width: 768px) {
     body {
-        overflow-x: hidden;
         padding: 0 10px;
     }
 
@@ -11,20 +15,25 @@
     .cont-item {
         height: 70px;
         padding: 0 16px;
-        justify-content: center;
+        justify-content: space-between;
     }
 
-    .nav-logo img {
-        width: 140px;
-        height: 32px;
-    }
-
-    .cont-list {
+    .cont-list,
+    .nav-icons {
         display: none;
     }
 
     .nav-icons {
         display: none;
+    }
+
+    .mobile-toggle-btn {
+        display: block;
+    }
+
+    .nav-logo img {
+        width: 140px;
+        height: 32px;
     }
 
     .hero {
@@ -249,16 +258,14 @@
         padding: 0 8px;
     }
 
-   @media (max-width: 480px) {
     .card-box {
-        width: calc(50% - 8px); 
-        min-height: 260px; 
+        width: calc(50% - 8px);
+        min-height: 260px;
     }
 
     .box-img img {
-        height: 180px; 
+        height: 180px;
     }
-}
 
     .card-box span {
         font-size: 10px;

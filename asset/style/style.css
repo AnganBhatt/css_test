@@ -1,3 +1,8 @@
+:root {
+    --font-family: "Poppins", sans-serif;
+    --second-family: "Montserrat", sans-serif;
+}
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -19,11 +24,38 @@ ol {
 .nav {
     background: #fff;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: relative;
+    z-index: 10;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+.mobile-toggle-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.mobile-nav-list {
+    list-style: none;
+    padding: 0;
+}
+
+.mobile-nav-list li {
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-nav-list li a {
+    display: block;
+    padding: 12px 0;
+    text-decoration: none;
+    color: #000;
+}
+
+.mobile-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 20px;
 }
 
 .cont-item {
@@ -352,14 +384,15 @@ span,
 }
 
 /*=========share-part=========== */
+
 .share-part {
-    height: auto; 
-    overflow: hidden; 
-    margin: 50px 0px; 
+    height: auto;
+    overflow: hidden;
+    margin: 50px 0px;
 }
 
 .share-image img {
-    width: 100%; 
+    width: 100%;
     height: auto;
     display: block;
 }
@@ -426,7 +459,6 @@ span,
 footer hr {
     border: none;
     border-top: 2px solid #f5f7fa;
-    ;
     margin: 30px 0;
 }
 
@@ -435,4 +467,270 @@ footer hr {
     font-weight: 400;
     font-size: 16px;
     color: #000;
+}
+
+/* ================================blogs-part-css======================== */
+.catagory-left-text h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 30px;
+    color: #000;
+}
+
+.catagory-left-text p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+    text-align: justify;
+    color: #9f9f9f;
+}
+
+.catagory-left-text span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.catagory-right-text h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.catagory-right-text li,
+.catagory-right-text span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.cate-post h5 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+.cate-post p small {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    color: #9f9f9f;
+}
+
+.catagory-list span {
+    margin-left: 180px;
+}
+
+.cate-list h4 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.cate-pages ul {
+    gap: 15px;
+}
+
+.cate-pages ul li a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background: #b88e2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ====================blog-sevice-css========================== */
+.service {
+    background: #faf3ea;
+}
+
+.service h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 150%;
+    color: #242424;
+}
+
+.service p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    color: #898989;
+}
+
+/* ============================shop-css========================================= */
+.shop-pages ul {
+    gap: 15px;
+}
+
+.shop-pages ul li a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    background: #b88e2f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ===================filter================== */
+.filter-part {
+    background: #f9f1e7;
+}
+
+.filter-part .fl {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #000;
+}
+
+.filter-part .result {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+/* =======================contact-css================================ */
+.get-touch h4 {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 36px;
+    color: #000;
+}
+
+.get-touch p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #9f9f9f;
+}
+
+.address-detail h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.address-detail p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+/* ==============single-product================= */
+.sub-nav h1 {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.sub-nav p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #000;
+}
+
+.single-product-detail {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 42px;
+    color: #000;
+}
+
+.single-product-detail .specific {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #9f9f9f;
+}
+
+.single-product-detail p {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #000;
+}
+
+.single-product-detail .Size {
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    color: #fff;
+    background: #b88e2f;
+}
+
+.color span {
+    display: inline-block;
+    border-radius: 50px;
+    width: 30px;
+    height: 30px;
+}
+
+.color span:nth-child(1) {
+    background: #816dfa;
+    display: inline-block;
+}
+
+.list-group-pro span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.list-group-pro a {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    color: #9f9f9f;
+}
+
+.more-detail {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    color: #9f9f9f;
+}
+
+.more-head span:nth-child(1) {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+}
+
+.more-head span {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 24px;
+    color: #9f9f9f;
 }

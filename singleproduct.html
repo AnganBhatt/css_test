@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="asset/style/style.css">
+    <link rel="stylesheet" href="asset/style/resposive.css">
+    <title>Single | product</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <div class="container">
+                <div class="cont-item">
+                    <div class="nav-logo">
+                        <img src="asset/image/Frame 168.png" alt="">
+                    </div>
+
+                    <div class="cont-list">
+                        <ul>
+                            <li><a href="./index.html">Home</a></li>
+                            <li><a href="./shop.html">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="./contact.html">contact</a></li>
+                            <li><a href="./blog.html">Blogs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="nav-icons">
+                        <img src="asset/image/mdi_account-alert-outline.png" alt="">
+                        <img src="asset/image/akar-icons_search.png" alt="">
+                        <img src="asset/image/akar-icons_heart.png" alt="">
+                        <img src="asset/image/ant-design_shopping-cart-outlined.png" alt="">
+                    </div>
+
+                    <!-- mobile hamburger -->
+                    <button class="mobile-toggle-btn" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
+                            <path d="M0 0h24v24H0z" fill="none" />
+                            <path fill="currentColor" d="M16 18v2H5v-2zm5-7v2H3v-2zm-2-7v2H8V4z" />
+                        </svg>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ===== mobile offcanvas menu ===== -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="mobile-nav-list">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="./contact.html">contact</a></li>
+                <li><a href="./blog.html">Blogs</a></li>
+            </ul>
+            <div class="mobile-icons">
+                <img src="asset/image/mdi_account-alert-outline.png" alt="">
+                <img src="asset/image/akar-icons_search.png" alt="">
+                <img src="asset/image/akar-icons_heart.png" alt="">
+                <img src="asset/image/ant-design_shopping-cart-outlined.png" alt="">
+            </div>
+        </div>
+    </div>
+    
+    <section class="product-loc p-lg-5 p-md-1" style="background-color: #f9f1e7;">
+        <div class="container">
+            <div class="row">
+                <div class="sub-nav" style="display: flex; gap: 10px;">
+                    <h1>home ></h1>
+                    <h1>shop ></h1>
+                    <p> | Asgaard sofa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--================ single-product-detail================ -->
+    <section class="single-product p-lg-5 p-md-1">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-1 ">
+                    <div class="mb-4"><img src="./asset/image/Group 94.png" class="img-fluid" alt=""></div>
+                    <div class="mb-4"><img src="./asset/image/Group 98.png" class="img-fluid" alt=""></div>
+                    <div class="mb-4"><img src="./asset/image/Group 97.png" class="img-fluid" alt=""></div>
+                    <div class="mb-4"><img src="./asset/image/Group 96.png" class="img-fluid" alt=""></div>
+                </div>
+                <div class="col-lg-5 col-md-12">
+                    <div class=" w-auto h-auto d-inline-block">
+                        <img src="./asset/image/Asgaard sofa 3.png"
+                            style="width: 481px; height:391px ; background: #f9f1e7;" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12 single-product-detail">
+                    <h4>Asgaard sofa</h4>
+                    <p class="specific">Rs. 250,000.00</p>
+                    <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                        stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended highs
+                        for a sound.
+                    </p>
+                    <div>
+                        <p class="specific">Size</p>
+                        <div class="d-flex gap-2 ">
+                            <span class="Size ">X</span>
+                            <span class="Size">XL</span>
+                            <span class="Size">XS</span>
+
+                        </div>
+                    </div>
+                    <div>
+                        <p class="specific">Color</p>
+                        <div class="Color d-flex gap-4">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+
+                    <div>
+                        <a href="#"></a>
+                        <a href="#" class="btn btn-outline-dark p-2">Add To Cart</a>
+                        <a href="#" class="btn btn-outline-dark p-2">Compare</a>
+                    </div>
+                    <div class="list-group-pro mt-4">
+                        <div class="col-12 row mb-lg-4 mb-md-2">
+                            <span class="col-3">SKU</span>
+                            <span class="col-1">:</span>
+                            <span class="col-8">SS001</span>
+                        </div>
+                        <div class="col-12 row col-12 row mb-lg-4 mb-md-2">
+                            <span class="col-3">Category</span>
+                            <span class="col-1">:</span>
+                            <span class="col-8">Sofas</span>
+                        </div>
+                        <div class="col-12 row col-12 row mb-lg-4 mb-md-2 ">
+                            <span class="col-3">Tags</span>
+                            <span class="col-1">:</span>
+                            <span class="col-8">
+                                <a href="./shop.html">sofa,</a>
+                                <a href="#">share,</a>
+                                <a href="./index.html">home,</a>
+                                <a href="./shop.html">shop</a>
+                            </span>
+                        </div>
+                        <div class="col-12 row col-12 row mb-lg-4 mb-md-2">
+                            <span class="col-3">Share</span>
+                            <span class="col-1">:</span>
+                            <span class="col-8"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="devider ">
+
+    <section class="description p-lg-5 p-md-1">
+        <div class="container">
+            <div class="more-head">
+                <div class="d-flex aling-items-center justify-content-center gap-4 mb-lg-4 mb-md-2">
+                    <span>Description</span>
+                    <span>Additional Information</span>
+                    <span>Reviews [5]</span>
+                </div>
+
+                <div class="more-detail mb-lg-4 mb-md-2">
+                    <p>Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo
+                        speaker takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the
+                        show on the road.
+                        <br> <br>
+                        Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled
+                        engineering. Setting the bar as one of the loudest speakers in its class, the Kilburn is a
+                        compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and
+                        extended highs for a sound that is both articulate and pronounced. The analogue knobs allow
+                        you to fine tune the controls to your personal preferences while the guitar-influenced
+                        leather strap enables easy and stylish travel.
+                    </p>
+                </div>
+                <div class="description-img row">
+                    <img src="./asset/image/Group 107.png" class="img-fluid col-lg-6 col-md-12" alt="">
+                    <img src="./asset/image/Group 106.png" class="img-fluid col-lg-6 col-md-12" alt="">
+                </div>
+            </div>
+            <div></div>
+        </div>
+    </section>
+
+    <section class="product-box p-lg-5 p-md-1">
+        <div class="container">
+            <div class="product-head">
+                <h4>Related Products</h4>
+            </div>
+
+            <div class="cards">
+                <div class="card-box">
+                    <div class="box-img">
+                        <img src="asset/image/Images.png" alt="">
+                    </div>
+                    <span>Syltherine</span>
+                    <p>Stylish cafe chair</p>
+                    <span class="one">Rp 2,500.000</span> <span class="two">Rp 3,500.000</span>
+                </div>
+
+                <div class="card-box">
+                    <div class="box-img">
+                        <img src="asset/image/Images (1).png" alt="">
+                    </div>
+                    <span>Leviosa</span>
+                    <p>Stylish calf chair</p>
+                    <span class="one">Rp 2 500.000</span>
+                    <span class="two"></span>
+                </div>
+
+                <div class="card-box">
+                    <div class="box-img">
+                        <img src="asset/image/Images (2).png" alt="">
+                    </div>
+                    <span>Lolito</span>
+                    <p>Luxury big sofa</p>
+                    <span class="one">Rp 7,000.000</span>
+                    <span class="two">Rp 14,000.000</span>
+                </div>
+            </div>
+            <div class="showmore">
+                <a href="./shop.html">Show more</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <hr>
+        <div class="container">
+            <div class="footer-data">
+                <div class="left-part">
+                    <h4>Funiro.</h4>
+                    <p>400 University Drive Suite <br> 200 Coral Gables,
+                        FL 33134 USA</p>
+                </div>
+
+                <div class="right-part">
+                    <div class="right-one">
+                        <p>Links</p>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Shop</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-two">
+                        <p>Help</p>
+                        <ul>
+                            <li><a href="#">Payment Options</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Privacy Policies</a></li>
+                        </ul>
+                    </div>
+                    <div class="right-three">
+                        <p>Newsletter</p>
+                        <input type="search" placeholder="Enter Your Email Address">
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="last-p">2023 furino. All rights reverved</p>
+        </div>
+    </section>
+</body>
+
+</html>
